@@ -1,149 +1,191 @@
-# Brave Google-style Home Page
+# Brave Home · หน้าแรกที่ปรับเป็นของคุณ
 
-หน้าแรกแบบเรียบง่ายสำหรับ Brave Browser ที่ออกแบบให้คล้ายหน้า Google New Tab พร้อมช่องค้นหา คำค้นแนะนำ และทางลัดเว็บไซต์ที่ปรับแต่งได้
+**หน้าแรกสำหรับ Brave พร้อมธีม ภาษา โลโก้ และเครื่องมือค้นหาที่เลือกเองได้**
+**A customizable Brave home page with themes, languages, personal logos, and your choice of search engine.**
 
-![ภาพตัวอย่างหน้าแรก](assets/preview.png)
+[ดาวน์โหลด / Download ZIP](https://github.com/Artyuiui/brave-google-homepage/archive/refs/heads/main.zip) · [ภาษาไทย](#ภาษาไทย) · [English](#english) · [ภาพฟีเจอร์ / Gallery](#feature-gallery)
 
-## ฟีเจอร์
+ไม่ต้องติดตั้งส่วนขยายหรือรันเซิร์ฟเวอร์ เปิดจากไฟล์ในเครื่องได้โดยตรง
+No extension or server required. Open the page directly from your computer.
 
-- ค้นหาด้วย Google จากหน้าแรก
-- แสดงคำค้นแนะนำจาก Google ขณะพิมพ์
-- ใช้ปุ่มลูกศร `↑` และ `↓` เพื่อเลือกคำแนะนำ แล้วกด `Enter` เพื่อค้นหา
-- เพิ่ม แก้ไข และลบทางลัดเว็บไซต์ได้
-- บันทึกทางลัดไว้ในเบราว์เซอร์ด้วย Local Storage
-- รองรับหน้าจอคอมพิวเตอร์และมือถือ
-- เมนูแอป Google พร้อมไอคอนและเลือกรายการโปรด
-- ปรับธีม Light / Dark / Device เลือกสี และอัปโหลดภาพพื้นหลัง
-- ซ่อน/แสดงทางลัดและปุ่มค้นหาเพิ่มเติม
-- ปุ่มค้นหาด้วยเสียง (ขึ้นอยู่กับเบราว์เซอร์), Google Lens และ AI Mode
-- ไม่ต้องติดตั้งแพ็กเกจ เก็บ index.html, enhancements.css และ enhancements.js ไว้ในโฟลเดอร์เดียวกัน
+## Preview · ตัวอย่างหน้าแรก
 
-## ติดตั้งเองทีละขั้น (Brave บนคอมพิวเตอร์)
+### ภาษาไทย · Dark theme
 
-ไม่ต้องติดตั้งส่วนขยาย ไม่ต้องใช้ Terminal และไม่ต้องเปิดเซิร์ฟเวอร์
+![หน้าแรกภาษาไทยในธีมมืด พร้อมค้นหาและทางลัด](assets/home-dark-th.png)
 
-### 1. ดาวน์โหลดและเก็บไฟล์
+### English · Light theme
 
-1. เปิด [GitHub repository](https://github.com/Artyuiui/brave-google-homepage)
-2. กดปุ่ม **Code** แล้วเลือก **Download ZIP**
-3. แตกไฟล์ ZIP แล้วนำโฟลเดอร์ไปไว้ในตำแหน่งถาวร เช่น **Documents/brave-home**
-4. ตรวจว่า `index.html`, `enhancements.css`, `enhancements.js` `localization.js` และ `experience.js` อยู่ในโฟลเดอร์เดียวกัน ห้ามดาวน์โหลดเฉพาะ `index.html`
+![English home page in light theme with search and shortcuts](assets/home-light-en.png)
 
-### 2. เปิดหน้าเว็บใน Brave และคัดลอกที่อยู่
+## Features · ฟีเจอร์
 
-1. เปิด Brave
-2. กด **Command + O** บน Mac หรือ **Ctrl + O** บน Windows/Linux
-3. เลือกไฟล์ `index.html` จากโฟลเดอร์ที่แตกไว้ แล้วกด **Open**
-4. ตรวจว่าหน้าแรกแสดงปุ่ม **ปรับแต่งหน้าแรก** และเมนูแอป Google
-5. กด **Command + L** / **Ctrl + L** เพื่อเลือกที่อยู่ แล้วกด **Command + C** / **Ctrl + C** เพื่อคัดลอก
+| ฟีเจอร์ | ภาษาไทย | English |
+| --- | --- | --- |
+| Search engines | เลือก Google, Bing, DuckDuckGo, Brave Search หรือ Yahoo | Choose Google, Bing, DuckDuckGo, Brave Search, or Yahoo. |
+| Search icon | ใช้ไอคอนเครื่องมือค้นหา เปลี่ยนเป็นภาพเอง หรือซ่อนได้ | Use the provider icon, upload your own, or hide it. |
+| Languages | อัตโนมัติตามภาษาเบราว์เซอร์ หรือเลือกไทย อังกฤษ ญี่ปุ่น จีน | Detect the browser language or choose Thai, English, Japanese, or Chinese. |
+| Themes | Light / Dark / Device พร้อมชุดสีสำเร็จรูป | Light, Dark, and Device modes with preset color palettes. |
+| Color picker | แถบรุ้ง ปรับความเข้ม ความสว่าง และรหัส HEX | Hue, saturation, lightness, and HEX controls. |
+| Logo & background | เพิ่มรูป พรีวิวก่อนบันทึก หรือกลับไปใช้แบบดั้งเดิม | Preview a custom logo or background before saving, or restore the original. |
+| Shortcuts | เพิ่ม แก้ไข ลบ และซ่อน/แสดงทางลัด | Add, edit, delete, show, or hide website shortcuts. |
+| Google apps | เมนูแอปพร้อมไอคอนและแก้ไขรายการโปรด | App launcher with icons and editable favorites. |
+| Suggestions | คำค้นแนะนำเมื่อเลือก Google ใช้ ↑ ↓ และ Enter ได้ | Google suggestions with arrow-key selection and Enter to search. |
+| Plus menu | พรีวิวรูป/ไฟล์ในเครื่อง และลิงก์ไปบริการสร้างภาพ | Local image/file previews and a link to image creation. |
+| Search tools | ค้นหาด้วยเสียงเมื่อเบราว์เซอร์รองรับ พร้อม Lens และ AI Mode | Voice search where supported, plus Google Lens and AI Mode links. |
+| Saved preferences | จำภาษา ธีม รูป และค่าที่เลือกในเบราว์เซอร์ | Save language, appearance, images, and preferences in the browser. |
 
-ที่อยู่จะเริ่มด้วย `file:///` ตัวอย่าง (ให้ใช้ที่อยู่ที่คัดลอกจากเครื่องของคุณ):
+<a id="feature-gallery"></a>
+## Feature gallery · ภาพฟีเจอร์
 
-```text
-macOS:   file:///Users/YOUR_NAME/Documents/brave-home/index.html
-Windows: file:///C:/Users/YOUR_NAME/Documents/brave-home/index.html
-Linux:   file:///home/YOUR_NAME/Documents/brave-home/index.html
-```
+### 1. Appearance & language · รูปลักษณ์และภาษา
 
-### 3. ตั้งปุ่ม Home
+ปรับภาษาและธีมจากแผงด้านข้าง ใช้สีสำเร็จรูปหรือกำหนดเอง
+Choose a language and theme in the side panel, then select a preset or custom color.
 
-1. เปิดแท็บใหม่ พิมพ์ `brave://settings/appearance` แล้วกด Enter
-2. เปิด **Show home button**
-3. ใต้ตัวเลือกนี้ เลือกช่อง **Enter custom web address** แทน **New Tab page**
-4. วางที่อยู่ `file:///.../index.html` ที่คัดลอกไว้
-5. กด **Tab** หรือคลิกนอกช่องเพื่อให้บันทึกค่า
+![แผงปรับแต่งภาษาและรูปลักษณ์ / Appearance and language panel](assets/customize-th.png)
 
-### 4. ตั้งให้เปิดทุกครั้งที่สร้างแท็บใหม่
+### 2. Color picker · ตัวเลือกสี
 
-1. พิมพ์ `brave://settings/getStarted` ในแถบที่อยู่ แล้วกด Enter
-2. หาหัวข้อ **New Tab Page**
-3. ที่ **New tab page shows** เลือก **Homepage**
-4. กด **Command + T** / **Ctrl + T** เพื่อตรวจว่าหน้าเว็บนี้เปิดขึ้นมา
+ปรับเฉดสี ความเข้ม ความสว่าง หรือใส่ HEX แล้วกดบันทึก ยกเลิกได้โดยไม่เปลี่ยนสีเดิม
+Adjust hue, saturation, lightness, or HEX, then save. Cancel keeps your previous color.
 
-### 5. ตั้งหน้าเมื่อเริ่มเปิด Brave
+![ตัวเลือกสีแบบแถบรุ้ง / Rainbow color picker](assets/color-picker-th.png)
 
-1. อยู่ที่ `brave://settings/getStarted`
-2. ในหัวข้อ **On startup** เลือก **Open the New Tab page**
-3. เมื่อเปิด Brave ครั้งใหม่ จะใช้หน้าแท็บใหม่ที่ตั้งเป็น Homepage ไว้ (หาก Brave กู้คืนเซสชันหลังปิดผิดปกติ อาจแสดงแท็บเดิม)
+### 3. Search engine & icon · เครื่องมือค้นหาและไอคอน
 
-### 6. ตรวจและเริ่มปรับแต่ง
+เลือกผู้ให้บริการค้นหาและเปลี่ยนไอคอนในช่องค้นหาได้ การตั้งค่านี้ใช้เฉพาะหน้าเว็บนี้
+Choose the search provider and search-bar icon. This setting applies to this page only.
 
-- กดปุ่มรูปบ้าน **Home**: ต้องเปิดหน้าเว็บนี้
-- เปิดแท็บใหม่: ต้องเปิดหน้าเว็บนี้
-- กด **ปรับแต่งหน้าแรก** เพื่อเลือกธีม สี พื้นหลัง และการแสดงทางลัด
-- กดเมนูเก้าจุดเพื่อเปิดแอป Google และกดดินสอเพื่อแก้ไขรายการโปรด
+![Brave Search selected in search engine settings](assets/search-engine-en.png)
 
-ชื่อเมนูอาจต่างกันตามภาษาและเวอร์ชันของ Brave ขั้นตอนนี้ตรวจจาก Brave บน macOS เวอร์ชัน 1.95.101
+### 4. Image preview · พรีวิวโลโก้และพื้นหลัง
 
-### อัปเดตเวอร์ชันภายหลัง
+เปิด **ตัวเลือกขั้นสูง → เปลี่ยนโลโก้ / เปลี่ยนภาพพื้นหลัง** เลือก **เพิ่มรูป** หรือ **ใช้แบบดั้งเดิม** จากนั้นกด **ใช้รูปนี้**
+Open **Advanced options → Change logo / Change background image**, choose **Add image** or **Use original**, then confirm with **Use this image**.
 
-1. ดาวน์โหลด ZIP เวอร์ชันใหม่จาก GitHub และแตกไฟล์
-2. นำ `index.html`, `enhancements.css`, `enhancements.js` `localization.js` และ `experience.js` ใหม่ไปแทนไฟล์เดิมในโฟลเดอร์เดิม
-3. รีโหลดหน้าเว็บด้วย **Command + R** / **Ctrl + R**
+![Logo preview with original and upload options](assets/image-preview-en.png)
 
-เก็บตำแหน่งและชื่อไฟล์เดิมไว้เพื่อไม่ต้องตั้ง Homepage ใหม่ ค่าปรับแต่งเก็บใน Local Storage ของเบราว์เซอร์ การย้ายไฟล์ เปลี่ยนโปรไฟล์ หรือล้างข้อมูลอาจทำให้ค่าเดิมไม่ปรากฏ และการเก็บข้อมูลสำหรับ `file://` ขึ้นอยู่กับเบราว์เซอร์
+### 5. Plus menu · เมนูปุ่มบวก
+
+เลือกภาพหรือไฟล์เพื่อพรีวิวในเครื่อง หากต้องการค้นหาหรือวิเคราะห์ ให้เปิด Lens/Gemini แล้วแนบไฟล์ในบริการนั้น
+Select images or files for a local preview. To search or analyze them, open Lens/Gemini and attach the files there.
+
+![เมนูเพิ่มรูป เพิ่มไฟล์ และสร้างภาพ / Add images, files, and image creation menu](assets/add-menu-th.png)
+
+## ภาษาไทย
+
+### ติดตั้งเองทีละขั้น
+
+1. เปิด [หน้า GitHub](https://github.com/Artyuiui/brave-google-homepage) แล้วกด **Code → Download ZIP**
+2. แตก ZIP และย้ายโฟลเดอร์ไปเก็บในตำแหน่งถาวร เช่น `Documents/brave-home`
+3. เก็บไฟล์ **ทั้ง 5 ตัว** ไว้ในโฟลเดอร์เดียวกัน: `index.html`, `enhancements.css`, `enhancements.js`, `localization.js`, `experience.js`
+4. เปิด Brave แล้วกด **Command + O** บน Mac หรือ **Ctrl + O** บน Windows/Linux เลือก `index.html`
+5. กด **Command + L / Ctrl + L** แล้วคัดลอกที่อยู่ `file:///.../index.html` จากแถบที่อยู่
+6. ไปที่ `brave://settings/appearance` เปิด **Show home button** เลือก **Enter custom web address** แล้ววางที่อยู่ไฟล์ กด Tab เพื่อบันทึก
+7. ไปที่ `brave://settings/getStarted` ในหัวข้อ **New Tab Page** ตั้ง **New tab page shows → Homepage**
+8. ถ้าต้องการให้แสดงตอนเปิด Brave ด้วย ในหัวข้อ **On startup** เลือก **Open the New Tab page**
+9. เปิดแท็บใหม่ด้วย **Command + T / Ctrl + T** และลองกดปุ่มรูปบ้าน เพื่อทดสอบ
+
+ใช้ที่อยู่จากเครื่องของคุณเอง ไม่ต้องใช้ `localhost` และอย่าย้ายโฟลเดอร์หลังตั้งค่า หากย้ายต้องอัปเดตที่อยู่ Homepage ใหม่ ชื่อเมนูอาจต่างตามภาษา/เวอร์ชัน ขั้นตอนนี้ตรวจจาก Brave บน macOS 1.95.101
+
+### วิธีใช้
+
+- **ภาษา:** ปรับแต่งหน้าแรก → ภาษา รองรับไทย อังกฤษ ญี่ปุ่น จีน ค่าอัตโนมัติอ่านภาษาหลักที่เบราว์เซอร์แจ้ง ซึ่งอาจต่างจากภาษา OS ภาษาที่ไม่รองรับใช้ English
+- **สี:** กดไอคอนดินสอท้ายชุดสีเพื่อเปิด Color picker
+- **โลโก้/พื้นหลัง:** ตัวเลือกขั้นสูง → เลือกรูป → ดูพรีวิว → ใช้รูปนี้ รูปต้องไม่เกิน **3 MB ต่อไฟล์** และเป็นรูปแบบที่เบราว์เซอร์อ่านได้
+- **เครื่องมือค้นหา:** เลือกผู้ให้บริการในแผงปรับแต่ง มีผลกับ Enter และผลจากไมโครโฟน ไอคอนที่อัปโหลดเองใช้ร่วมกับทุกผู้ให้บริการจนกว่าจะคืนค่าเดิม
+- **ทางลัด:** กดเพิ่มทางลัด หรือปุ่ม `⋮` บนทางลัดเพื่อแก้ไข/ลบ
+- **แอปโปรด:** เปิดเมนูเก้าจุด แล้วกดดินสอเพื่อเลือกรายการโปรด
+
+### อัปเดตเวอร์ชัน
+
+ดาวน์โหลด ZIP ใหม่ แล้วนำไฟล์หลักทั้ง 5 ตัวไปแทนไฟล์เดิมในตำแหน่งเดิม จากนั้นกด **Command + Shift + R** บน Mac หรือ **Ctrl + Shift + R** บน Windows/Linux
+
+### สิ่งที่ควรทราบ
+
+- ค่าปรับแต่งและภาพบันทึกใน Local Storage ไม่อัปโหลดรูปโลโก้หรือพื้นหลังไปเซิร์ฟเวอร์ หากพื้นที่เต็มหรือรูปอ่านไม่ได้ จะคงรูปเดิมและแจ้งเตือน
+- การล้างข้อมูล เปลี่ยนโปรไฟล์ หรือย้ายไฟล์อาจทำให้ค่าเดิมไม่ปรากฏ การเก็บข้อมูลสำหรับ `file://` ขึ้นอยู่กับเบราว์เซอร์
+- การค้นหา คำค้นแนะนำ ไอคอนบางส่วน และบริการภายนอกต้องใช้อินเทอร์เน็ต คำแนะนำจาก Google ทำงานเมื่อเลือก Google เท่านั้น
+- รูป/ไฟล์ที่เลือกในเมนูบวกเป็นพรีวิวในเครื่อง **ไม่ได้แนบไปกับคำค้น** ปุ่มสร้างรูปภาพเปิด Gemini ในแท็บใหม่ ไม่ได้สร้างภาพภายในหน้าเว็บนี้
+- ค้นหาด้วยเสียงขึ้นอยู่กับการรองรับของเบราว์เซอร์และสิทธิ์ไมโครโฟน Lens และ AI Mode ยังคงเป็นบริการของ Google
+- การปรับธีมและ Search engine ไม่เปลี่ยนธีมของ Brave หรือผู้ให้บริการค้นหาในแถบที่อยู่
+- ไม่อ่านประวัติเบราว์เซอร์หรือแท็บอื่น จึงไม่มี Most visited sites / Continue with these tabs จาก Brave ปุ่มบัญชีเป็นลิงก์ ไม่ได้ซิงค์ข้อมูลบัญชี Google
 
 ### แก้ปัญหาเบื้องต้น
 
-- **หน้าเว็บไม่มีรูปแบบหรือปุ่มไม่ทำงาน:** ตรวจว่าไฟล์ CSS และ JS อยู่ข้าง `index.html` แล้วรีโหลด
-- **เปิดแท็บใหม่แล้วยังเป็นหน้า Brave:** ตรวจว่า **New tab page shows** เป็น **Homepage**
-- **หาไฟล์ไม่พบ:** ถ้าย้ายโฟลเดอร์ ให้เปิด `index.html` จากตำแหน่งใหม่แล้วคัดลอกที่อยู่ไปตั้งใหม่
-- **ที่อยู่เป็น localhost:** เปิดไฟล์ด้วยขั้นตอนที่ 2 แล้วใช้ที่อยู่ `file:///` เพื่อไม่ต้องรันเซิร์ฟเวอร์
-- **ไมโครโฟนใช้งานไม่ได้:** การค้นหาด้วยเสียงต้องอาศัยการรองรับและสิทธิ์ไมโครโฟนของเบราว์เซอร์ ยังพิมพ์ค้นหาได้ตามปกติ
+| อาการ | วิธีแก้ |
+| --- | --- |
+| หน้าตาไม่ครบหรือปุ่มไม่ทำงาน | ตรวจว่าไฟล์หลักทั้ง 5 ตัวอยู่ด้วยกัน แล้วรีโหลด |
+| แท็บใหม่ยังเป็นหน้า Brave | ตั้ง New tab page shows เป็น Homepage |
+| หาไฟล์ไม่พบ | เปิดไฟล์จากตำแหน่งใหม่ แล้วนำที่อยู่ไปตั้ง Homepage ใหม่ |
+| รูปบันทึกไม่ได้ | ลดขนาดรูป ตรวจพื้นที่จัดเก็บและสิทธิ์ของเบราว์เซอร์ |
+| ไมโครโฟนใช้ไม่ได้ | ตรวจการรองรับและสิทธิ์ หรือพิมพ์ค้นหาแทน |
 
-## การจัดการทางลัด
+## English
 
-- กด **Add shortcut** หรือ **เพิ่มทางลัด** เพื่อเพิ่มเว็บไซต์
-- ชี้เมาส์บนทางลัดแล้วกดปุ่ม `⋮` เพื่อแก้ไขหรือลบ
-- ทางลัดจะถูกเก็บไว้เฉพาะในโปรไฟล์ Brave และอุปกรณ์ที่ใช้งาน
+### Install step by step
 
-## หมายเหตุ
+1. Open the [GitHub repository](https://github.com/Artyuiui/brave-google-homepage) and select **Code → Download ZIP**.
+2. Extract the ZIP and move the folder to a permanent location, such as `Documents/brave-home`.
+3. Keep **all five application files together**: `index.html`, `enhancements.css`, `enhancements.js`, `localization.js`, and `experience.js`.
+4. Open Brave. Press **Command + O** on Mac or **Ctrl + O** on Windows/Linux, then select `index.html`.
+5. Press **Command + L / Ctrl + L** and copy the `file:///.../index.html` address.
+6. Open `brave://settings/appearance`, enable **Show home button**, select **Enter custom web address**, and paste the file address. Press Tab to save.
+7. Open `brave://settings/getStarted`. Under **New Tab Page**, set **New tab page shows → Homepage**.
+8. To show this page when Brave starts, select **On startup → Open the New Tab page**.
+9. Open a new tab with **Command + T / Ctrl + T** and test the Home button.
 
-คำค้นแนะนำต้องเชื่อมต่ออินเทอร์เน็ต เพราะดึงข้อมูลจากบริการแนะนำคำค้นของ Google หากบริการดังกล่าวไม่ตอบสนอง ช่องค้นหายังสามารถค้นหาได้ตามปกติ
+Use the file address from your own computer. No `localhost` server is needed. If you move the folder later, update the homepage address. Menu labels may vary by language/version; these steps were checked in Brave 1.95.101 on macOS.
 
-## โครงสร้างไฟล์
+### Usage
+
+- **Language:** Customize home page → Language. Supports Thai, English, Japanese, and Chinese. Automatic mode follows the primary language reported by the browser, which may differ from the OS language. Unsupported languages fall back to English.
+- **Color:** Click the pencil tile at the end of the palette to open the color picker.
+- **Logo/background:** Advanced options → choose an image → review the preview → Use this image. Each image must be **3 MB or smaller** and decodable by the browser.
+- **Search engine:** Choose a provider in the customization panel. It handles Enter searches and recognized voice queries. A custom icon is shared across providers until you restore the original.
+- **Shortcuts:** Use Add shortcut, or the `⋮` button on a shortcut to edit/delete it.
+- **Favorite apps:** Open the nine-dot launcher and click the pencil to edit favorites.
+
+### Updating
+
+Download the latest ZIP, replace all five application files in the same folder, then press **Command + Shift + R** on Mac or **Ctrl + Shift + R** on Windows/Linux.
+
+### Behavior and limitations
+
+- Preferences and images are saved in Local Storage. Custom logos/backgrounds are not uploaded to a server. Storage failures or unreadable images keep the previous image and show a message.
+- Clearing browser data, changing profiles, or moving files may make saved preferences unavailable. Storage behavior for `file://` depends on the browser.
+- Search, suggestions, some icons, and external services require internet access. Google suggestions are requested only when Google is selected.
+- Files chosen through the plus menu are local previews and **are not attached to search requests**. Create images opens Gemini in a new tab; it does not generate images inside this page.
+- Voice search depends on browser support and microphone permission. Lens and AI Mode remain Google services.
+- Theme and search-provider changes affect this page only, not Brave's toolbar theme or address-bar search engine.
+- This page does not read browser history or other tabs, so it cannot populate Brave's Most visited sites or Continue with these tabs. The account button is a link, not Google account synchronization.
+
+### Troubleshooting
+
+| Problem | Solution |
+| --- | --- |
+| Missing styles or inactive controls | Keep all five application files together and reload. |
+| New tabs still show Brave's default page | Set New tab page shows to Homepage. |
+| File not found | Open the file at its new location and update the homepage address. |
+| Image cannot be saved | Use a smaller image and check browser storage availability. |
+| Voice search is unavailable | Check support/permissions, or type your query. |
+
+## Files · โครงสร้างไฟล์
 
 ```text
 brave-home/
-├── index.html
-├── enhancements.css
-├── enhancements.js
-├── localization.js
-├── experience.js
+├── index.html          # Page and shortcut/search logic
+├── enhancements.css    # Themes and interface styles
+├── enhancements.js     # App launcher and preferences
+├── localization.js     # Languages and personalization
+├── experience.js       # Search providers, previews, color picker, plus menu
 ├── README.md
-└── assets/
-    └── preview.png
+├── LICENSE
+└── assets/             # Screenshots used in this README
 ```
 
-## License
+## License & attribution · สิทธิ์การใช้งาน
 
-เผยแพร่ภายใต้ [MIT License](LICENSE)
-
-## การปรับแต่งหน้าแรก
-
-กดปุ่ม **ปรับแต่งหน้าแรก** มุมขวาล่างเพื่อเลือกธีม สี หรือภาพพื้นหลัง (ไม่เกิน 3 MB) การตั้งค่ามีผลเฉพาะหน้าเว็บนี้ ไม่เปลี่ยนธีมของตัวเบราว์เซอร์ กดไอคอนเก้าจุดเพื่อเปิดแอป Google และใช้ไอคอนดินสอเพื่อเลือกรายการโปรด
-
-ปุ่มบวกในช่องค้นหาและ Lens เปิดบริการ Google Lens ส่วน AI Mode เปิด Google Search ในโหมด AI ตามความพร้อมของบริการ บัญชีด้านบนเป็นลิงก์ไปยังบัญชี Google ไม่ได้ดึงรูปหรือข้อมูลโปรไฟล์มาแสดง ไอคอนเว็บไซต์บางส่วนโหลดจาก Google และต้องใช้อินเทอร์เน็ต
-
-## ภาษาและตัวเลือกขั้นสูง
-
-- ค่าเริ่มต้น **อัตโนมัติ (ตามเครื่อง)** ใช้ภาษาหลักที่เบราว์เซอร์แจ้ง (`navigator.languages`) ซึ่งอาจต่างจากภาษา OS ถ้าตั้งค่าเบราว์เซอร์ไว้ต่างกัน
-- รองรับ **ไทย, English, 日本語, 中文** ภาษาที่ยังไม่รองรับใช้ English
-- เปลี่ยนภาษาได้ใน **ปรับแต่งหน้าแรก → ภาษา** โดยมีผลทันทีและบันทึกไว้ ชื่อแท็บเป็น **New Tab** เมื่อใช้ภาษาอังกฤษ
-- ภาษาที่เลือกใช้กับข้อความ UI คำค้นแนะนำที่ร้องขอจาก Google และภาษารับเสียง โดยไม่แปลชื่อทางลัดที่ผู้ใช้ตั้งหรือเนื้อหาผลค้นหา
-- เปิด **ปรับแต่งหน้าแรก → ตัวเลือกขั้นสูง → เปลี่ยนโลโก้** เพื่อแทนโลโก้ Google ด้วยรูปจากเครื่อง ใช้ **คืนค่าโลโก้ Google** เพื่อกลับไปใช้แบบเดิม
-- ในหัวข้อเดียวกัน กด **เปลี่ยนภาพพื้นหลัง** หรือ **นำภาพพื้นหลังออก**
-- รูปแต่ละไฟล์ต้องไม่เกิน **3 MB** และเป็นรูปแบบที่เบราว์เซอร์อ่านได้ พื้นที่รวมขึ้นอยู่กับ Local Storage ของเบราว์เซอร์ หากพื้นที่เต็มหรือรูปเสียจะแจ้งเตือนและเก็บรูปเดิมไว้
-- รูปที่เลือกเก็บในเบราว์เซอร์นี้ ไม่อัปโหลดไปเซิร์ฟเวอร์ รูปกับค่าที่เลือกยังอยู่หลังรีโหลด การล้างข้อมูลเว็บไซต์อาจลบค่าที่บันทึกไว้
-- เมื่ออัปเดตจากเวอร์ชันก่อน ต้องคัดลอก **localization.js** เพิ่มไว้ข้าง **index.html** ด้วย
-
-## ตัวเลือกสี พรีวิว และ Search engine
-
-- ในแผงปรับแต่ง กดไอคอนดินสอท้ายชุดสี เพื่อเปิด Color picker แบบแถบรุ้ง ปรับเฉดสี ความเข้ม ความสว่าง หรือรหัส HEX แล้วกดบันทึก การยกเลิกไม่เปลี่ยนสีที่ใช้อยู่
-- **ตัวเลือกขั้นสูง → เปลี่ยนโลโก้ / เปลี่ยนภาพพื้นหลัง** เปิดหน้าพรีวิว เลือก **เพิ่มรูป** หรือ **ใช้แบบดั้งเดิม** แล้วกด **ใช้รูปนี้** เพื่อบันทึก การยกเลิกจะคงภาพเดิม
-- **เครื่องมือค้นหา** เลือก Google, Bing, DuckDuckGo, Brave Search หรือ Yahoo ใช้กับการกด Enter ค้นหาข้อความและผลจากไมโครโฟนในหน้าเว็บนี้ ไม่เปลี่ยน Search engine ในแถบที่อยู่ของ Brave
-- แสดง/ซ่อนไอคอนเครื่องมือค้นหา หรือกด **เปลี่ยนไอคอน** เพื่อใช้ภาพของคุณเองได้ ไอคอนที่กำหนดเองจะใช้ร่วมกันกับทุกเครื่องมือจนกว่าจะเลือกใช้แบบดั้งเดิม
-- คำค้นแนะนำจาก Google ทำงานเมื่อเลือก Google เท่านั้น ปุ่ม Lens และ AI Mode ยังเป็นบริการของ Google
-- ปุ่ม **+** ในช่องค้นหาเปิดเมนูเพิ่มรูป เพิ่มไฟล์ และสร้างรูปภาพ การเลือกไฟล์เป็นพรีวิวในเครื่องเท่านั้น ไม่ได้แนบไปกับการค้นหา ให้กดเปิด Lens/Gemini แล้วแนบไฟล์ในบริการนั้นด้วยตัวเอง **สร้างรูปภาพ** เปิด Gemini ในแท็บใหม่
-- หน้าเว็บธรรมดาไม่สามารถอ่านประวัติการเข้าเว็บทั้งหมดหรือแท็บอื่นของ Brave จึงไม่มีการดึง Most visited sites หรือ Continue with these tabs จากเบราว์เซอร์
-- เมื่ออัปเดต ต้องวาง **experience.js** ข้าง **index.html** ด้วย
+[MIT License](LICENSE). โปรเจกต์อิสระ ไม่ใช่ผลิตภัณฑ์ทางการของ Google หรือ Brave เครื่องหมายการค้าเป็นของเจ้าของแต่ละราย
+Independent project; not an official Google or Brave product. Product names and trademarks belong to their respective owners.
