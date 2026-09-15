@@ -32,4 +32,5 @@ query.addEventListener('compositionstart',()=>{composing=true;clearTimeout(timer
 query.addEventListener('focus',()=>{if(query.value.trim())loadSuggestions()});query.addEventListener('keydown',e=>{if(e.isComposing)return;if(e.key==='Escape'){request++;clearTimeout(timer);hideSuggestions();return}if(panel.hidden)return;if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();active=(active+(e.key==='ArrowDown'?1:-1)+suggestions.length)%suggestions.length;[...suggestList.children].forEach((row,i)=>row.setAttribute('aria-selected',String(i===active)));query.value=suggestions[active];query.setAttribute('aria-activedescendant','suggestion-'+active)}});
 query.addEventListener('blur',hideSuggestions);searchForm.addEventListener('submit',e=>{if(!query.value.trim())e.preventDefault();clearTimeout(timer);request++;hideSuggestions()});
 </script>
-<script src="enhancements.js"></script></html>
+<script src="enhancements.js"></script>
+<script src="experience.js"></script></html>

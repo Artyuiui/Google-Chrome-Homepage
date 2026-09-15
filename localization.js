@@ -59,7 +59,7 @@ function translateUI(){document.documentElement.lang=currentLanguage();document.
   const original=sourceText.get(node)||node.textContent.trim();if(!messages[original])continue;
   sourceText.set(node,original);node.textContent=t(original);
  }
- document.querySelectorAll('[aria-label],[placeholder]').forEach(el=>{if(el.closest('.tile,.app-link'))return;let originals=sourceAttributes.get(el)||{};for(const attr of ['aria-label','placeholder']){const original=originals[attr]||el.getAttribute(attr);if(messages[original]){originals[attr]=original;el.setAttribute(attr,t(original))}}sourceAttributes.set(el,originals)});
+ document.querySelectorAll('[aria-label],[placeholder]').forEach(el=>{if(el.closest('.tile,.app-link')||(document.querySelector('#engine-select')&&el.matches('#query,#attach')))return;let originals=sourceAttributes.get(el)||{};for(const attr of ['aria-label','placeholder']){const original=originals[attr]||el.getAttribute(attr);if(messages[original]){originals[attr]=original;el.setAttribute(attr,t(original))}}sourceAttributes.set(el,originals)});
  document.querySelectorAll('[data-color]').forEach(el=>el.setAttribute('aria-label',t('เลือกสี')+' '+el.dataset.color));
 }
 let originalLogo;
