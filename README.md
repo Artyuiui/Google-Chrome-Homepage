@@ -1,9 +1,9 @@
-# Brave Home · หน้าแรกที่ปรับเป็นของคุณ
+# Google-Chrome-Homepage
 
-**หน้าแรกสำหรับ Brave พร้อมธีม ภาษา โลโก้ และเครื่องมือค้นหาที่เลือกเองได้**
-**A customizable Brave home page with themes, languages, personal logos, and your choice of search engine.**
+**หน้าแรกสำหรับ Brave และ Firefox พร้อมธีม ภาษา โลโก้ และเครื่องมือค้นหาที่เลือกเองได้**
+**A customizable home page for Brave and Firefox with themes, languages, personal logos, and your choice of search engine.**
 
-[ดาวน์โหลด / Download ZIP](https://github.com/Artyuiui/brave-google-homepage/archive/refs/heads/main.zip) · [ภาษาไทย](#ภาษาไทย) · [English](#english) · [ภาพฟีเจอร์ / Gallery](#feature-gallery)
+[ดาวน์โหลด / Download ZIP](https://github.com/Artyuiui/Google-Chrome-Homepage/archive/refs/heads/main.zip) · [ภาษาไทย](#ภาษาไทย) · [English](#english) · [ภาพฟีเจอร์ / Gallery](#feature-gallery)
 
 ไม่ต้องติดตั้งส่วนขยายหรือรันเซิร์ฟเวอร์ เปิดจากไฟล์ในเครื่องได้โดยตรง
 No extension or server required. Open the page directly from your computer.
@@ -77,7 +77,7 @@ Select images or files for a local preview. To search or analyze them, open Lens
 
 ### ติดตั้งเองทีละขั้น
 
-1. เปิด [หน้า GitHub](https://github.com/Artyuiui/brave-google-homepage) แล้วกด **Code → Download ZIP**
+1. เปิด [หน้า GitHub](https://github.com/Artyuiui/Google-Chrome-Homepage) แล้วกด **Code → Download ZIP**
 2. แตก ZIP และย้ายโฟลเดอร์ไปเก็บในตำแหน่งถาวร เช่น `Documents/brave-home`
 3. เก็บไฟล์ **ทั้ง 5 ตัว** ไว้ในโฟลเดอร์เดียวกัน: `index.html`, `enhancements.css`, `enhancements.js`, `localization.js`, `experience.js`
 4. เปิด Brave แล้วกด **Command + O** บน Mac หรือ **Ctrl + O** บน Windows/Linux เลือก `index.html`
@@ -88,6 +88,17 @@ Select images or files for a local preview. To search or analyze them, open Lens
 9. เปิดแท็บใหม่ด้วย **Command + T / Ctrl + T** และลองกดปุ่มรูปบ้าน เพื่อทดสอบ
 
 ใช้ที่อยู่จากเครื่องของคุณเอง ไม่ต้องใช้ `localhost` และอย่าย้ายโฟลเดอร์หลังตั้งค่า หากย้ายต้องอัปเดตที่อยู่ Homepage ใหม่ ชื่อเมนูอาจต่างตามภาษา/เวอร์ชัน ขั้นตอนนี้ตรวจจาก Brave บน macOS 1.95.101
+
+### ตั้งหน้าแรกใน Firefox
+
+1. เปิด `index.html` ใน Firefox และคัดลอกที่อยู่ `file:///.../index.html`
+2. เปิด `about:preferences#home` → **Home and startup**
+3. ใน **Homepage → New windows** เลือก **Custom URLs…**
+4. กด **Choose a specific site** วางที่อยู่ใน **Enter address** แล้วกด **Add address**
+5. หากต้องการเปิดหน้าแรกตอนเริ่ม Firefox ให้ปิด **Open previous windows and tabs**
+6. กด **Command + N / Ctrl + N** เพื่อทดสอบหน้าต่างใหม่
+
+ตรวจจาก Firefox 155.0.1 บน macOS: ตั้งหน้า Home/หน้าต่างใหม่ได้ แต่เมนู **New tabs** มีเพียง Firefox Home และ Blank Page จึงยังไม่เปลี่ยนแท็บใหม่เป็นไฟล์นี้ ชื่อเมนูในเวอร์ชันอื่นอาจต่างกัน
 
 ### วิธีใช้
 
@@ -126,7 +137,7 @@ Select images or files for a local preview. To search or analyze them, open Lens
 
 ### Install step by step
 
-1. Open the [GitHub repository](https://github.com/Artyuiui/brave-google-homepage) and select **Code → Download ZIP**.
+1. Open the [GitHub repository](https://github.com/Artyuiui/Google-Chrome-Homepage) and select **Code → Download ZIP**.
 2. Extract the ZIP and move the folder to a permanent location, such as `Documents/brave-home`.
 3. Keep **all five application files together**: `index.html`, `enhancements.css`, `enhancements.js`, `localization.js`, and `experience.js`.
 4. Open Brave. Press **Command + O** on Mac or **Ctrl + O** on Windows/Linux, then select `index.html`.
@@ -137,6 +148,17 @@ Select images or files for a local preview. To search or analyze them, open Lens
 9. Open a new tab with **Command + T / Ctrl + T** and test the Home button.
 
 Use the file address from your own computer. No `localhost` server is needed. If you move the folder later, update the homepage address. Menu labels may vary by language/version; these steps were checked in Brave 1.95.101 on macOS.
+
+### Set the homepage in Firefox
+
+1. Open `index.html` in Firefox and copy its `file:///.../index.html` address.
+2. Open `about:preferences#home` → **Home and startup**.
+3. Under **Homepage → New windows**, choose **Custom URLs…**.
+4. Click **Choose a specific site**, paste the address into **Enter address**, and click **Add address**.
+5. To show the homepage at startup, turn off **Open previous windows and tabs**.
+6. Press **Command + N / Ctrl + N** to test a new window.
+
+Checked in Firefox 155.0.1 on macOS: Home/new windows support custom URLs, but **New tabs** offers only Firefox Home or Blank Page. This setup therefore does not replace the new-tab page. Labels may differ in other versions.
 
 ### Usage
 
